@@ -1,0 +1,404 @@
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* ***********    BODY *********************** */
+body{
+  background-image: url("./assets/img/drew-graham-cTKGZJTMJQU-unsplash.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 0;
+  
+
+  /* pour footer */
+  min-height: 100%;
+  position: relative;
+}
+
+
+/* **************** H - p - others colors ********************* */
+h1{
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+h2{
+  font-weight: 700;
+}
+
+.black {
+  color: black;
+}
+
+.grey {
+  color: grey;
+}
+
+.white {
+  color: white;
+}
+
+p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.whiteBackground{
+  background-color: white;
+}
+
+.noBorder {
+  border: none;
+}
+
+
+/* ************* HEADER ******************* */
+header{
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.logo {
+  flex: 2
+}
+
+.othersHeader{
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+.othersHeader>span{
+  display: none;
+}
+
+header button{
+  background: transparent;
+}
+
+header i{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+::placeholder{
+  color: white;
+  opacity: 1;
+  font-size: 0.8em;
+}
+
+/* ++++++++++++++ DESKTOP ++++++++++++++++ */
+@media screen and (min-width: 601px) {
+
+  header{
+    height: 50px;
+  }
+
+  #searchText{
+    display: inline;
+    border-left: 2px solid white;
+    padding-left: 1vw;
+    background: transparent;
+  }
+
+  .othersHeader>span{
+    display: inline;
+  }
+
+}
+/* +++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ************ NAVBAR ******************* */
+
+#main-menu{
+  display: flex;
+  justify-content: center;
+}
+
+nav a{
+  text-decoration: none;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  color: white;
+  font-size: 1.2em ;
+}
+
+nav a:hover {
+  background-color: black;
+}
+nav a:active {
+  background-color: black;
+}
+
+/* ++++++++++++++ SMARTPHONE ++++++++++++++++ */
+@media screen and (max-width: 601px) {
+  #main-menu{
+    display: none;
+  }
+}
+/*  ++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* **************** CARROUSEL ************** */
+
+.carouselSection{
+  margin-top: 0.7vw;
+}
+
+.carousel {
+  max-width: 100%;
+  display: block;
+}
+
+.carouselOverlay{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#marginOverlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  border: 1.5vw solid rgba(0,0,0,0.5);
+}
+
+.leftArrow, .rightArrow {
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.leftArrow{
+  left: 3vw;
+}
+
+.rightArrow{
+  right: 3vw;
+}
+
+/* ++++++++++++++ DESKTOP ++++++++++++++++ */
+@media screen and (min-width: 601px) {
+  .leftArrow, .rightArrow {
+    font-size: 5rem;
+  }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* //////////////// LOWER PAGE /////////////////  */
+
+/* ++++++++++++++ SMARTPHONE ++++++++++++++++ */
+
+@media screen and (max-width: 601px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "account"
+    "articleTitle"
+    "articleP"
+    "articleImg";
+  }
+}
+/*  ++++++++++++++++++++++++++++++++++++++++++++ */
+
+.article, .account {
+  margin-top: 0.3vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  flex: 1;
+}
+
+.lowerPage h2 {
+  margin-top: 1vw;
+  margin-bottom: .7vw;
+}
+
+/* ++++++++++++++ DESKTOP ++++++++++++++++ */
+@media screen and (min-width: 601px) {
+  .lowerPage{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* *********** ASIDE ARTICLE ************ */
+#articleTitle {
+  grid-area: articleTitle;
+}
+
+#crop {
+  grid-area: articleP;
+  font-size: 0.78rem;
+}
+
+#articleImg {
+  grid-area: articleImg
+}
+
+#crop {
+  margin-top: 0;
+  margin-right: 1.5vw;
+  font-size: 0.78rem;
+} 
+
+#articleImg {
+  display: block;
+}
+
+/* ++++++++++++++ SMARTPHONE ++++++++++++++++ */
+@media screen and (max-width: 600px) {
+
+  .articleAlign{
+    margin-right: 2vw;
+  }
+
+  #crop {
+    margin-bottom: 2vw;
+    font-size: 0.78rem;
+  } 
+
+  #articleImg {
+    width: 100%;
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++ DESKTOP ++++++++++++++++ */
+@media screen and (min-width: 601px) {
+
+  .articleAlign{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 2vw;
+  }
+
+  #crop {
+    margin-bottom: 0;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%; 
+    -webkit-line-clamp: 17;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 33vh;
+    flex-shrink: inherit;
+  } 
+
+  #articleImg {
+    height: 33vh;
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++ */
+
+/* *************** FORM ********************** */
+.account {
+  display:flex;
+  flex-direction: column;
+  grid-area: account;
+}
+
+.fields {
+  display:flex;
+  flex-direction: column;
+}
+
+.account label, .connect {
+  font-size: 1rem;
+}
+
+form input {
+  align-items: stretch;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  margin-right: 0;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connect {
+  background-color: #DCA79C;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+.forgotten {
+font-size: .7rem;
+background-color: transparent;
+}
+
+
+/* ************** FOOTER ******************** */
+footer {
+  margin-left: 0;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  bottom: 0;
+  align-items: center;
+}
+
+.medium-footer {
+  font-size: .8rem;
+}
+
+/* ++++++++++++++ SMARTPHONE ++++++++++++++++ */
+@media screen and (max-width: 600px) {
+
+  .small-footer {
+    display:  none;
+  }
+
+  footer {
+    margin-top: 1.5vw;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+/* ++++++++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++ DESKTOP ++++++++++++++++ */
+@media screen and (min-width: 601px) {
+
+  .small-footer {
+    font-size: .7rem;
+  }
+
+  footer {
+    margin-top: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+/* ++++++++++++++++++++++++++++++++++++++++++ */

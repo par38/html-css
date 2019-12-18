@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test Monica Tarabusi</title>
+  <link type="text/css" rel="stylesheet" href="index.css">
+
+  <link rel="icon" href="./assets/favicon.ico" />
+
+  <!-- ******************** fonts ******************* -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+
+  <!-- ******************** icons ****************** -->
+  <script src="https://kit.fontawesome.com/6db710454d.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<!-- //////////// BODY ///////////// -->
+
+<body>
+
+  <!--  ***************** HEADER ****************** -->
+
+  <header>
+
+    <h1 class="logo">MYBRAND</h1>
+
+    <div class="othersHeader">
+      <button type="submit" class="noBorder"><i class="fas fa-search ffa-rotate-90 white"></i></button>
+      <span><input text="text" id="searchText" class="noBorder" placeholder="Rechercher un produit..."></span>
+    </div>
+
+    <div>
+      <button type="submit" class="othersHeader noBorder white"><i class="fas fa-shopping-bag"></i><span>Mon
+          Panier</span></button>
+    </div>
+
+    <div>
+      <button type="submit" class="othersHeader noBorder white"> <i class="fas fa-user"></i><span>Mon
+          Compte</span></button>
+    </div>
+
+  </header>
+
+  <hr class="white" />
+
+  <!-- ******************* NAVBAR *********************** -->
+  <nav id="main-menu">
+    <a href="#clients" rel="noreferrer" alt="">CLIENTS</a>
+    <a href="#marques" rel="noreferrer">MARQUES</a>
+    <a href="#boutiques" rel="noreferrer">BOUTIQUES</a>
+    <a href="#commandes" rel="noreferrer">COMMANDES</a>
+    <a href="#panier" rel="noreferrer">PANIER</a>
+  </nav>
+
+
+  <!--  ********************CARROUSEL ****************** -->
+  <section class="carouselSection">
+
+    <div class="carouselOverlay">
+
+      <img src="./assets/img/freestocks-org-YGmk9UZMdZg-unsplash.jpg" alt="lips" class="carousel">
+
+      <div id="marginOverlay"></div>
+
+      <i class="fas fa-angle-left leftArrow"></i>
+
+      <i class="fas fa-angle-right rightArrow"></i>
+
+    </div>
+
+  </section>
+
+  <!-- *************** LOWER PAGE ************************ -->
+  <section class="lowerPage container">
+
+    <!-- ************* ARTICLE ************* -->
+    <aside class="article">
+
+      <h2 id="articleTitle">Test | MyBrand</h2>
+      <div class="articleAlign">
+        <p id="crop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et orci diam. Proin porta quam
+          id
+          enim rhoncus
+          luctus. Vestibulum eu nibh risus. Donec eget nibh in risus dapibus tincidunt at nec arcu. Pellentesque cursus
+          dapibus sem, feugiat porta augue bibendum quis. Nam convallis lorem purus, et rhoncus sapien tempor nec. In
+          quis
+          ultrices arcu, ac congue est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et orci diam.
+          Proin porta quam id enim rhoncus luctus. Vestibulum eu nibh risus. Donec eget nibh in risus dapibus tincidunt
+          at
+          nec arcu. Pellentesque cursus dapibus sem, feugiat porta augue bibendum quis. Nam convallis lorem purus
+          adipiscing elit. Quisque et orci diam.
+          Proin porta quam id enim rhoncus luctus. Vestibulum eu nibh risus. Donec eget nibh in risus dapibus tincidunt.
+          ultrices arcu, ac congue est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et orci diam.
+          Proin porta quam id enim rhoncus luctus. Vestibulum eu nibh risus. Donec eget nibh in risus dapibus tincidunt
+          at
+          nec arcu.Proin porta quam id enim rhoncus luctus. Vestibulum eu nibh risus. Donec eget nibh in risus dapibus
+          tincidunt.
+          ultrices arcu, ac congue est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et orci diam.
+          Proin porta quam id enim rhoncus luctus. Vestibulum eu nibh risus. Donec eget nibh in risus dapibus tincidunt
+          at
+          nec arcu.
+        </p>
+        <img src="./assets/img/actionvance-m2h5-H_08Qk-unsplash.jpg" alt="golden makeup" id="articleImg">
+      </div>
+
+    </aside>
+
+    <!-- ********************** FORM ************************ -->
+    <aside class="account">
+
+      <h2>MON COMPTE</h2>
+
+      <form action="post" action="urlSendForm">
+
+        <div class="fields">
+          <label for="name">Identifiant</label>
+          <input type="text" name="name" id="user_name" class="black whiteBackground noBorder" required>
+        </div>
+
+        <div class="fields">
+          <label for="password">Mot de passe</label>
+          <input type="password" name="password" pattern="^[0-9]+$" title="Chiffres uniquement" id="user_password"
+            class="black whiteBackground noBorder" required>
+        </div class="fields">
+
+        <div class="buttons">
+          <button type="submit" class="connect noBorder white">
+            <span>Se connecter</span>
+          </button>
+          <button type="button" class="forgotten noBorder white">
+            <span>Mot de passe perdu ?</span>
+          </button>
+        </div>
+
+      </form>
+
+    </aside>
+  </section>
+
+  <!-- ****************** FOOTER ************************* -->
+  <footer class="whiteBackground">
+
+    <p class="grey small-footer">La boutique de mode en ligne mybrand.com vous propose une collection de vêtements pour
+      femme :
+      Prêt à porter, Lingerie</p>
+
+    <p class="black medium-footer"><i class="far fa-copyright"></i> mybrand 2015 - Infos légales</p>
+</body>
+
+</footer>
+
+
+</html>
